@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+*{
+    padding:0;
+    margin: 0;
+box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 p{
+    font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main_message_card{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+
+}
+.all-chat-box{
+    position: fixed;
+        bottom: 0px;
+        right: 26rem;
+        display: flex;
+        gap: 1rem;
+        align-items: flex-end;
+}
+.user ,.users{
+border-bottom: 1px solid gray;
+margin: 0.5rem 0;
+padding:7px 1rem  ;
+cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.user:hover {
+    background-color: rgb(235, 233, 233);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.accordion-body{
+    padding: 0 !important;
 }
+
+.header{
+    background-color: gray;
+}
+
+.profile_picture{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+
+}
+
+.accordion-body{
+    height: 50vh;
+    overflow-y: auto;
+}
+
+.accordion-button{
+border:1px solid blue !important;
+width :auto !important;
+    padding: 2px 2px 2px 0 !important;
+}
+.accordion{
+    width: 25rem;
+    margin: 0;
+}
+.btnclose {
+    font-weight: 100 !important;
+    font-size: 1.5rem;
+    background-color:white !important;
+    color:#4b4bfd !important;
+padding: 2px 5px !important;
+/* border: none !important; */
+}
+
+.accordion-header{
+width: 100%;
+}
+
+.message{
+    background-color: aquamarine;
+padding: 10px;
+margin: 10px;
+border-radius: 5%;
+}
+
+.message-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.sender{
+margin-left: auto;
+}
+
+.message-profile{
+    width: 35x;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.userprofile-status{
+    position: relative;
+    padding: 0;
+}
+
+.online-Status{
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    bottom:0;
+    right:0;
+    border: 3px solid white;
+    padding: 2px;
+}
+
+.search_group{
+    border-bottom:2px solid rgb(147, 45, 45) ;
+padding: 10px 2px;
+text-align: center;
+}
+
+ .search_group input{
+    border: 2px solid black;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+    margin-left: 5px;
+    width: 90%;
+ }
+
+
+ .sending_part{
+    width: 100%;
+    padding: 5px;
+ }
+ .sending_part input{ 
+    width: 80%;
+    margin: auto;
+    padding:2px 5px;
+    border: 2px solid rgb(0, 132, 255);
+    border-radius: 5px;
+}
+.sending_part button{
+    padding: 3px;
+    margin-left: 10px;
+
+ }
+ .file-attach{
+    display: none;
+ }
+
+
+
